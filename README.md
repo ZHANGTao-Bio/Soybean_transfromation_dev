@@ -1,8 +1,10 @@
 # Soybean_transfromation_dev
 Multi-omics analysis of soybean genetic transformation at different developmental stages
-##目录结构
-'''
-~/
+
+#目录结构
+
+```
+ ~/
 ├── projects/                         # 所有项目根目录
 │   └── project_name/                 # soybean_transformation_dev
 │       ├── raw_data/                 # 原始测序数据（fastq / bam），强烈建议只读
@@ -42,4 +44,6 @@ Multi-omics analysis of soybean genetic transformation at different developmenta
 │   └── annotation/                   # 额外注释（CpG岛、重复元件、黑名单区域）
 │
 └── tmp/                              # 临时文件（注意定期清理）
+
+```
 '''
