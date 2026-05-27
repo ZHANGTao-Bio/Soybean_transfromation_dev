@@ -23,3 +23,9 @@ conda create --prefix ~/CUT_Tag_env python=3.9 -y
 
 💎 总结
 简单来说，就是用“www队列”来解决网络问题，用自己安装的 Miniconda 来保证稳定可控。这两个办法可以解决你遇到的大部分问题。
+
+#安装软件
+csub -q www -I -n 1 /bin/bash  #申请节点
+source ~/miniconda3/etc/profile.d/conda.sh  #重新加载env
+conda activate ~/CUT_Tag_env #激活env
+conda install -c bioconda -y fastp  #安装软件
