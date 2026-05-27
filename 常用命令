@@ -1,8 +1,25 @@
-如果登录节点无法访问外网，请参考文档第10页：使用 www 队列（虚拟机）来下载。您可以提交一个交互式任务：
+#申请“www队列”节点：
 
 bash
-# 申请一个 www 队列的交互式节点
 csub -q www -I -n 1 /bin/bash
-如果 /bin/bash 成功执行，你的终端会直接切换到那个请求到的计算节点上，命令提示符也会变成节点主机名（例如 [yzwl_zhangtao@cXXXXXX ~]$）。
-此时，你就登录到了该计算节点，可以自由地输入和执行任何命令，比如 wget、ls、top 等。这就是“交互式作业”的体验。
-# 然后在弹出的终端中执行上面的 wget 命令
+执行后耐心等待片刻，一旦命令提示符的前缀从 [xxx@hw90 ...] 变成了其他主机名（例如 [xxx@cXXXXXX ...]），就说明你成功登录到了计算节点。
+
+在计算节点上配置环境：
+
+bash
+# 1. 重新加载你的 conda
+source ~/miniconda3/etc/profile.d/conda.sh
+
+# 2. 配置清华源（按文档第39页示例操作）
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config --set show_channel_urls yes
+
+# 3. 创建环境
+conda create --prefix ~/CUT_Tag_env python=3.9 -y
+这应该就能成功了。创建完成后，可以输入 exit 退出节点，回到 login 队列。
+
+💎 总结
+简单来说，就是用“www队列”来解决网络问题，用自己安装的 Miniconda 来保证稳定可控。这两个办法可以解决你遇到的大部分问题。
