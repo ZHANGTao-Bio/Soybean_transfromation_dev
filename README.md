@@ -1,6 +1,6 @@
 # CUT&Tag 数据分析 Pipeline — 大豆 Wm82
 
-本项目提供了一套完整的 CUT&Tag 数据分析流程，适用于 **海南人工智能计算中心 (HNAICC)** 集群环境（`csub` 作业调度系统）。分析对象为 **大豆 Wm82 参考基因组**，包含 **E. coli spike-in 标准化**。
+本项目提供了一套完整的 CUT&Tag 数据分析流程，适用于 （`csub` 作业调度系统）。分析对象为 **大豆 Wm82 参考基因组**，包含 **E. coli spike-in 标准化**。
 
 ## 📋 项目信息
 
@@ -11,7 +11,7 @@
 | 组蛋白修饰 | H3K27ac, H3K4me3, H3K9ac, H3K9me3 |
 | 对照 | IgG（各 2 个生物学重复） |
 | Spike-in | E. coli K12 |
-| 集群 | HNAICC (csub 调度) |
+| 集群 |  (csub 调度) |
 | Conda 环境 | `CUT_Tag_env` |
 
 ## 📁 目录结构
