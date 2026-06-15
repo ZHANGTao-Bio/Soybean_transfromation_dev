@@ -1,21 +1,8 @@
 #申请“www队列”节点：
 
-bash
-csub -q www -I -n 1 /bin/bash
-执行后耐心等待片刻，一旦命令提示符的前缀从 [xxx@hw90 ...] 变成了其他主机名（例如 [xxx@cXXXXXX ...]），就说明你成功登录到了计算节点。
-
-在计算节点上配置环境：
-
-bash
-# 1. 重新加载你的 conda
+您可以通过以下命令手动激活 base 环境：
 source ~/miniconda3/etc/profile.d/conda.sh
-
-# 2. 配置清华源（按文档第39页示例操作）
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-conda config --set show_channel_urls yes
+conda activate base
 
 # 3. 创建环境
 conda create --prefix ~/CUT_Tag_env python=3.9 -y
