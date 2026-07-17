@@ -16,3 +16,9 @@ csub -q www -Is -n 1 /bin/bash  #申请节点
 source ~/miniconda3/etc/profile.d/conda.sh  #重新加载env
 conda activate ~/CUT_Tag_env #激活env
 conda install -c bioconda -y fastp  #安装软件
+
+#作业管理提交www任务后，先 source conda.sh，然后直接用 mamba activate：
+
+bash
+source ~/miniconda3/etc/profile.d/conda.sh
+mamba activate my-r-env
