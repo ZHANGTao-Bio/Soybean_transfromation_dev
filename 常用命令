@@ -22,3 +22,9 @@ conda install -c bioconda -y fastp  #安装软件
 bash
 source ~/miniconda3/etc/profile.d/conda.sh
 mamba activate my-r-env
+
+
+R PATH
+/share/home/yzwl_zhangtao/miniconda3/envs/my-r-env/bin/R
+R lib PATH
+/share/home/yzwl_zhangtao/miniconda3/envs/my-r-env/lib/R/library
