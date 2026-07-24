@@ -34,10 +34,11 @@ R_HOME
                                                                 R_LIBS_SITE 
 "/share/org/YZWL/yzwl_zhangtao/miniconda3/envs/my_r_env/lib/R/site-library" 
                                                             LD_LIBRARY_PATH 
-                                                     "/.singularity.d/libs" 
+                                                     
 
 
 R PATH
-/share/home/yzwl_zhangtao/miniconda3/envs/my-r-env/bin/R
+/share/org/YZWL/yzwl_zhangtao/miniconda3/envs/my_r_env/lib/R
 R lib PATH
-/share/home/yzwl_zhangtao/miniconda3/envs/my-r-env/lib/R/library
+/share/org/YZWL/yzwl_zhangtao/miniconda3/envs/my_r_env/lib/R/lib
+/share/org/YZWL/yzwl_zhangtao/miniconda3/envs/my_r_env/lib
